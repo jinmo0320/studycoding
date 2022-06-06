@@ -1,0 +1,167 @@
+body {
+  font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.outBox {
+  width: 448px;
+  height: 500px;
+  margin-bottom: 24px;
+
+  border: 1px solid rgb(218, 220, 224);
+  border-radius: 10px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  padding: 0px 16px;
+  color: #5f6368;
+  font-size: 14px;
+
+  border-bottom: 1px solid rgb(218, 220, 224);
+}
+.main {
+  margin-top: 36px;
+  padding: 0px 40px;
+}
+.title {
+  text-align: center;
+  color: #202124;
+  padding-bottom: 0;
+  padding-top: 16px;
+  font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3333;
+  word-break: break-word;
+}
+.semiTitle {
+  text-align: center;
+  color: #202124;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  line-height: 1.5;
+  padding-top: 8px;
+}
+
+.loginBox {
+  display: grid;
+  grid-template-areas:
+    "i i"
+    "e e"
+    "c n";
+  padding-top: 24px;
+}
+.inputBox {
+  grid-area: i;
+}
+.email {
+  grid-area: e;
+  padding-top: 9px;
+  padding-bottom: 3px;
+  color: rgb(26, 115, 232);
+  font-size: 15px;
+}
+.create {
+  display: flex;
+  align-items: center;
+  grid-area: c;
+  color: rgb(26, 115, 232);
+  margin-top: 26px;
+  font-size: 15px;
+}
+.next {
+  grid-area: n;
+  text-align: end;
+  margin-top: 26px;
+}
+.next > button {
+  border: none;
+  color: #fff;
+  background-color: rgb(26, 115, 232);
+  font-size: 14px;
+  padding: 0 24px;
+  margin: 6px 0;
+  height: 36px;
+  border-radius: 5px;
+  transition: box-shadow 0.15s;
+}
+.next > button:hover {
+  background-color: rgb(27, 102, 202);
+  box-shadow: 0px 1px 5px rgb(163, 163, 163);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  font-size: 12px;
+  color: #202124;
+  padding: 0;
+}
+.lang > span {
+  font-size: 8px;
+  color: #464646;
+  padding-left: 5px;
+}
+.tmi {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: end;
+  color: #757575;
+}
+.tmi > * {
+  padding: 0px 16px;
+}
+.googleImg {
+  position: relative;
+  margin-right: 12px;
+  transform: translateY(1px);
+}
+
+/* /////////////////////// */
+
+.inputBox {
+  position: relative;
+  height: 54px;
+  padding-top: 8px;
+}
+.inputBox input[type="text"] {
+  padding: 13px 15px;
+  width: 100%;
+  height: 54px;
+  font-size: 17px;
+  box-sizing: border-box;
+  border: 1px solid rgb(218, 220, 224);
+  border-radius: 5px;
+  outline: none;
+}
+.inputBox label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0 8px;
+  color: #5f6368;
+  font-size: 17px;
+  font-weight: normal;
+  background: #fff;
+  transform: scale(1) translate(8px, -16px);
+  transition: all 0.15s;
+  pointer-events: none;
+}
+.inputBox input[type="text"]:focus,
+.outBox.existence .inputBox input[type="text"] {
+  border: 2px solid rgb(26, 115, 232);
+}
+.inputBox input[type="text"]:focus + label,
+.outBox.existence .inputBox label {
+  color: rgb(26, 115, 232);
+  transform: scale(0.8) translate(-12px, -51px);
+}
+/* /////////////////////////// */
